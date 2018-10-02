@@ -83,11 +83,9 @@ used to pass in an event loop you wish the client to use. By default
 Installation
 ------------
 
-``elasticsearch-async`` is available via PyPI so you can install it using pip
-
 .. code-block:: bash
 
-    pip install elasticsearch-async
+    sudo python3 setup.py install
 
 
 License
