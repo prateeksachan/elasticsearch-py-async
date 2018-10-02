@@ -3,7 +3,7 @@ import ssl
 import warnings
 
 import aiohttp
-from aiohttp.client_exceptions import ServerFingerprintMismatch
+from aiohttp.errors import FingerprintMismatch as ServerFingerprintMismatch
 import async_timeout
 
 from elasticsearch.exceptions import ConnectionError, ConnectionTimeout, ImproperlyConfigured, SSLError
