@@ -10,8 +10,7 @@ class AsyncConnectionPool(ConnectionPool):
 
     @asyncio.coroutine
     def close(self):
-        await ([conn.close() for conn in self.orig_connections],
-                           loop=self.loop)
+        await ([conn.close() for conn in self.orig_connections], loop=self.loop)
 
 
 class AsyncDummyConnectionPool(DummyConnectionPool):
